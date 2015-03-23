@@ -21,15 +21,15 @@ public class CalculatingOfRent {
     public static double Vgas;              // Объем израсходованного газа
 
     // итоговые суммы по каждому парметру
-    public static double Ssod;
-    public static double Scap;
-    public static double Sotop;
-    public static double Shvs;
-    public static double Sgvs;
-    public static double Svod;
-    public static double Sel;
-    public static double Sgas;
-    public static double Stotal;
+    public static double Ssod;              // Итоговая сумма по содержанию жил.здания
+    public static double Scap;              // Итоговая сумма по капитальному ремонту дома
+    public static double Sotop;             // Мтоговая сумма по отоплению квартиры
+    public static double Shvs;              // Итоговая сумма по холодному водоснабжению
+    public static double Sgvs;              // Итоговая сумма по горячему водоснабжению
+    public static double Svod;              // Итоговая сумма по водоотведению
+    public static double Sel;               // Итоговая сумма по электроэнергии
+    public static double Sgas;              // Итоговая сумма по газу
+    public static double Stotal;            // Итоговая сумма по платежу за квартплату
 
     public static void main(String[] args) {
 
