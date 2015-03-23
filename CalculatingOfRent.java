@@ -3,22 +3,22 @@ import java.util.Scanner;
 public class CalculatingOfRent {
 
     // константы тарифов
-    static final double Tsod = 18.69;
-    static final double Tcap = 5.80;
-    static final double Totop = 21.67;
-    static final double Thvs = 18.50;
-    static final double Tgvs = 123.58;
-    static final double Tvod = 14.50;
-    static final double Tel = 2.35;
-    static final double Tgas = 4.72;
+    static final double Tsod = 18.69;       // Тариф содержания
+    static final double Tcap = 5.80;        // Тариф капитального ремонта
+    static final double Totop = 21.67;      // Тариф отопления
+    static final double Thvs = 18.50;       // Тариф холодного водоснабжения
+    static final double Tgvs = 123.58;      // Тариф горячего водоснабжения
+    static final double Tvod = 14.50;       // Тариф водоотведения
+    static final double Tel = 2.35;         // Тариф электроэнергии
+    static final double Tgas = 4.72;        // Тариф за газ
 
     // переменные, с данными плательщика по параметрам
-    public static double Vkv;
-    public static double Vhvs;
-    public static double Vgvs;
-    public static double Vvod;
-    public static double Vel;
-    public static double Vgas;
+    public static double Vkv;               // Площадь квартиры введенныая пользователем
+    public static double Vhvs;              // Объем израсходованного холодного водоснабжения
+    public static double Vgvs;              // Объем израсходованного горячего водоснабжения
+    public static double Vvod;              // Объем водоотведения
+    public static double Vel;               // Объем израсходованной электроэнергии
+    public static double Vgas;              // Объем израсходованного газа
 
     // итоговые суммы по каждому парметру
     public static double Ssod;
