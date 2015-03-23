@@ -41,21 +41,22 @@ public class CalculatingOfRent {
         Vhvs = Input();
         System.out.print("3. Введите объем потребленного горячего водоснабжения = ");
         Vgvs = Input();
-        Vvod = Vgvs + Vhvs;             //объем водоотведения
+        Vvod = Vgvs + Vhvs;             //объем водоотведения - сумма горячего и холодного водоснабжения
         System.out.print("4. Введите объем потребленной электроэнергии = ");
         Vel = Input();
         System.out.print("5. Введите объем потребленного газа = ");
         Vgas = Input();
 
         //считаем по формулам стоимость услуг
-        Ssod = Tsod * Vkv;
-        Scap = Tcap * Vkv;
-        Sotop = Totop * Vkv;
-        Shvs = Thvs * Vhvs;
-        Sgvs = Tgvs * Vgvs;
-        Svod = Tvod * Vvod;
-        Sel = Tel * Vel;
-        Sgas = Tgas * Vgas;
+        Ssod = Tsod * Vkv;              // формула расчета итоговой суммы по содержанию
+        Scap = Tcap * Vkv;              // формула расчета итоговой суммы по капитальному ремонту
+        Sotop = Totop * Vkv;            // формула расчета итоговой суммы по отоплению
+        Shvs = Thvs * Vhvs;             // формула расчета итоговой суммы по холодному водоснабжению
+        Sgvs = Tgvs * Vgvs;             // формула расчета итоговой суммы по горячему водоснабжению
+        Svod = Tvod * Vvod;             // формула расчета итоговой суммы по водоотведению.
+        Sel = Tel * Vel;                // формула расчета итоговой суммы по электроэнергии.
+        Sgas = Tgas * Vgas;             // формула расчета итоговой суммы по газу
+        // формула расчета итоговой суммы по всему платежу
         Stotal = Ssod+Scap+Sotop+Shvs+Sgvs+Svod+Sel+Sgas;
 
         //выводим результат на экран
